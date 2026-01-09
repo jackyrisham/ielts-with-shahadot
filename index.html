@@ -17,7 +17,7 @@
             font-family: "Segoe UI", Arial, sans-serif;
             background: #0f172a;
             color: #ffffff;
-        }
+        } 
 
         /* ===== HEADER ===== */
         header {
@@ -71,7 +71,15 @@
             cursor: pointer;
             transition: 0.3s;
         }
+a.test-btn-link {
+    text-decoration: none;  /* underline remove */
+    color: inherit;          /* parent div color inherit করবে */
+    display: block;          /* div এর মতো behave করবে */
+}
 
+a.test-btn-link:hover {
+    color: inherit;          /* hover এ same color রাখবে */
+}
         .test-btn:hover {
             transform: translateY(-8px);
             border-color: #38bdf8;
@@ -167,5 +175,6 @@
 
 </body>
 </html>
+
 
 
