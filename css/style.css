@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #0f172a;
+    color: #ffffff;
+} 
+
+/* ===== HEADER ===== */
+header {
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: #020617;
+}
+
+/* ===== SLIDER ===== */
+.slider {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2563eb, #9333ea);
+    text-align: center;
+    padding: 20px;
+}
+
+.slide-text {
+    font-size: 32px;
+    max-width: 800px;
+    animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ===== BUTTON SECTION ===== */
+.tests {
+    max-width: 1050px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+a.test-btn-link {
+    text-decoration: none;  /* remove underline */
+    color: inherit;          /* inherit div color */
+    display: block;
+}
+
+.test-btn {
+    background: #020617;
+    border: 2px solid #334155;
+    border-radius: 14px;
+    padding: 35px 20px;
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.test-btn:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+    background: #020617;
+}
+
+.test-btn span {
+    display: block;
+    font-size: 14px;
+    margin-top: 8px;
+    color: #94a3b8;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+footer a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
