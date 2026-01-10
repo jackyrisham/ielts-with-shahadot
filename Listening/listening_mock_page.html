@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reading Mock Tests | IELTS CD Practice</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shahadot">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #0f172a;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            padding: 20px;
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            background: #020617;
+            letter-spacing: 1px;
+        }
+
+        /* ===== PAGE TITLE ===== */
+        .page-title {
+            text-align: center;
+            margin: 40px 20px 20px;
+        }
+
+        .page-title h1 {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .page-title p {
+            font-size: 16px;
+            color: #94a3b8;
+        }
+
+        /* ===== MOCK LIST ===== */
+        .mock-list {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        /* ===== MOCK CARD AS LINK ===== */
+        .mock-card-link {
+            text-decoration: none;
+        }
+
+        .mock-card {
+            background: #020617;
+            border: 2px solid #334155;
+            border-radius: 14px;
+            padding: 35px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s;
+            color: #ffffff;
+            display: block;
+        }
+
+        .mock-card:hover {
+            transform: translateY(-8px);
+            border-color: #38bdf8;
+        }
+
+        .mock-card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .mock-card span {
+            font-size: 14px;
+            color: #94a3b8;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #94a3b8;
+        }
+
+        footer a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+    IELTS CD Practice
+</header>
+
+<!-- ===== TITLE ===== -->
+<section class="page-title">
+    <h1>Listening Mock Tests</h1>
+    <p>Select a mock test to start practicing under real exam conditions</p>
+</section>
+
+<!-- ===== MOCK TEST BUTTONS AS LINKS ===== -->
+<section class="mock-list">
+    <a href="https://jackyrisham.github.io/ielts-with-shahadot/Listening/mocklists/Practice-Full-Listening.html" class="mock-card-link">
+        <div class="mock-card">
+            <h3>Listening Mock 1</h3>
+            <span>4 Sections · 40 questions · 30 minutes</span>
+        </div>
+    </a>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    © <span id="year"></span>
+    <a href="https://about.me/shahadot.dev" target="_blank">
+        Shahadot
+    </a>
+    | IELTS Practice Platform
+</footer>
+
+<script>
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+</script>
+
+</body>
+</html>
+
+
+
+
+
